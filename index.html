@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kourtney's FINAL 3-Page Assignment - IDIA 616 Final Portfolio</title>
+
+    <style>
+        /* Main Style */
+        body {
+            background-image: url('img/studio.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        p {
+            color: #FFFFED;
+            /* Text color */
+            font-family: Arial, sans-serif;
+
+            /* Font family */
+            .header {
+                color: #FFFFED;
+                padding: 10px;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        /* Responsive styles - learned first week of class */
+        @media screen and (max-width: 600px) {
+
+            /* Styles for Iphones/Andriods */
+            .header {
+                font-size: 24px;
+            }
+
+            .container {
+                font-size: 16px;
+            }
+
+            .image {
+                background-image: url('img/studio.jpg');
+                ;
+            }
+        }
+
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+
+            /* Styles for Tablets */
+            .header {
+                font-size: 36px;
+            }
+
+            .container {
+                font-size: 18px;
+            }
+
+            .image {
+                background-image: url('img/studio.jpg');
+                ;
+            }
+        }
+
+        @media screen and (min-width: 1025px) {
+
+            /* Styles for desktops */
+            .header {
+                font-size: 48px;
+            }
+
+            .container {
+                font-size: 20px;
+            }
+
+            .image {
+                background-image: url('img/studio.jpg');
+                ;
+            }
+        }
+
+        /* Styling for the blinking cursor */
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .blinking-cursor {
+            animation: blink 1s infinite;
+        }
+
+        /* Styling for the text */
+        #output {
+            font-size: 165%;
+            /* Increased font size by 45% */
+            color: #FFFFED;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Container for the text and cursor -->
+    <div id="output-container">
+        <span id="output"></span><span class="blinking-cursor">|</span>
+    </div>
+
+    <script>
+        // Text to be written out
+        const text = "Welcome to my portfolio! Take a look around.";
+
+        // Function to simulate typing effect
+        function typeWriter(text, i, outputElement) {
+            if (i < text.length) {
+                outputElement.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(() => typeWriter(text, i, outputElement), 50);
+            }
+        }
+
+        // Initial call to start typing effect
+        typeWriter(text, 0, document.getElementById('output'));
+    </script>
+
+    </head>
+
+    <body>
+        <!-- 9/14/2023 Added "Header" and "Heading Here" based on Module 3 notes -->
+        <h1 style="font-size:9vw">Crafting Digital Experiences: A UX/UI Portfolio</h1>
+        <header>
+            <h1>By: Kourtney Johnson</h1>
+            <nav>
+                <ul>
+                    <div class="top left">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="page01.html">Projects 1-3</a></li>
+                        <li><a href="page02.html">Projects 3-6</a></li>
+                        <li><a href="#PROJECTS">Overview</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</body>
+
+<body>
+    <header class="header">
+        <h3> “Design is where science and art break even.”
+            <h4> —Robin Mathew </h4>
+        </h3>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1 0 calc(33.333% - 20px);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 0 calc(50% - 20px);
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+        <h3> <a id="PROJECTS" PROJECTS>PROJECTS </h3></a>
+
+        <div class="container">
+            <div class="box">
+                <h2>Responsive & Accessibility ♿</h2>
+                <p>Simple 3-page portfolio web site that is
+                    accessible and published on the internet.
+                    <br>Uses responsive web design through pure HTML/CSS.
+                </p>
+                <a href="page01.html" class="button">Read More</a>
+            </div>
+            <div class="box">
+                <h2>Voice User Interface 🌤️</h2>
+                <p> Meet "Windy" the Weather Whisperer!</p>
+                <a href="page01.html" class="button">Read More</a>
+            </div>
+            <div class="box">
+                <h2>"Make the World a better place" 🧑🏾‍🍳</h2>
+                <p>Check out "EcoChef" a sustainable cooking guide that is environmentally conscious.</p>
+                <a href="page01.html" class="button">Read More</a>
+            </div>
+            <div class="box">
+                <h2>"Make the World a better place" pt.2 🥗</h2>
+                <p>"Eco Chef" w/ VUI </p>
+                <a href="page02.html" class="button">Read More</a>
+            </div>
+            <div class="box">
+                <h2>Augmented Reality 📱</h2>
+                <p> Check out my Christmas shopping center and check out my dancing Elk!
+                    Tip: Allow the app to use the camera and audio and "tap" the screen to place the AR wherever you
+                    want! </p>
+                <a href="page02.html" class="button">Read More</a>
+            </div>
+            <div class="box">
+                <h2>"Design@UBALT" AR Experience</h2>
+                <p>Welcome to Design @ UBALT! Take a tour and see the programs offered. </p>
+                <a href="page02.html" class="button">Read More</a>
+            </div>
+
+            </main>
+
+    </body>
+</body>
+</main>
+
+</html>
+</body>
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .box {
+            flex: 1 0 calc(33.333% - 20px);
+            background-color: #FFFFED;
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                flex: 1 0 calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+
+</html>
+
+<section>
+    <div class="image">
+        <picture>
+            <img src="img/KJBW.png" alt="Kourtney Black & White Photo" media="(max-width: 600px)">
+        </picture>
+    </div>
+    </p>
+</section>
+</main>
+<footer>
+    <p>2023 Kourtney Johnson - Email : Kourtney.Johnson@Ubalt.edu</p>
+    <picture>
+        <img src="img/kjltiny.png" alt="Kourtney J Logo" media="(max-width: 100px)">
+    </picture>
+</footer>
+</body>

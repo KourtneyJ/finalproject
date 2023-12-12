@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects 3-6 FINAL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Main Style */
+    body {
+        background-image: url('img/pinktvs.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
+        color: #ffffed;
+        /* Text color */
+        font-family: Arial, sans-serif;
+        /* Font family */
+    }
+
+    .header {
+        color: #000000;
+        padding: 10px;
+
+        .header {
+            color: #000000;
+            padding: 10px;
+        }
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    /* Responsive styles - learned first week of class */
+    @media screen and (max-width: 600px) {
+
+        /* Styles for Iphones/Andriods */
+        .header {
+            font-size: 24px;
+        }
+
+        .container {
+            font-size: 16px;
+        }
+
+        .image {
+            background-image: url('img/pinktvs.jpg');
+        }
+    }
+
+    @media screen and (min-width: 601px) and (max-width: 1024px) {
+
+        /* Styles for Tablets */
+        .header {
+            font-size: 36px;
+        }
+
+        .container {
+            font-size: 18px;
+        }
+
+        .image {
+            background-image: url('img/pinktvs.jpg');
+        }
+    }
+
+    @media screen and (min-width: 1025px) {
+
+        /* Styles for desktops */
+        .header {
+            font-size: 48px;
+        }
+
+        .container {
+            font-size: 20px;
+        }
+
+        .image {
+            background-image: url('img/pinktvs.jpg');
+        }
+    }
+
+    .cream-text {
+        color: #ffffed;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Projects 3-6</h1>
+        <nav>
+            <ul>
+                <div class="left">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="page01.html">Projects 1-3</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f0f0f0;
+                }
+
+                .container {
+                    max-width: 960px;
+                    margin: 20px auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+
+                .box {
+                    flex: 1 0 calc(33.333% - 20px);
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    transition: transform 0.2s;
+                    position: relative;
+                }
+
+                .box:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                }
+
+                h2 {
+                    color: #333;
+                }
+
+                p {
+                    color: #666;
+                }
+
+                h3 {
+                    color: #ffffed
+                }
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                }
+
+                @media (max-width: 768px) {
+                    .box {
+                        flex: 1 0 calc(50% - 20px);
+                    }
+                }
+            </style>
+        </head>
+
+        <body>
+            <div class="container">
+                <div class="box">
+                    <h2>"Make the World a better place" pt.2 🥗</h2>
+                    <p>This particular task of the project involved embedding a VUI chat assistant.</p>
+                    <img src="img/3dapps.jpg" alt="3D Apps"><br>
+                    <a href="https://creator.voiceflow.com/prototype/653ac3faf7dde5d6255ffb4f" class="button">Project 4
+                        - MTWABP2</a>
+                </div>
+                <div class="box">
+                    <h2>Augmented Reality 📱</h2>
+                    <p>In this assignment, I was tasked with making an Augmented Reality 'environment'. We used a
+                        platform
+                        called "MyWebAr" that helped us get acclimated with AR features and capabilities. It was fun!
+                    </p>
+                    <img src="img/3dfix.jpg" alt="3D Fixtures"><br>
+                    <a href="https://mywebar.com/qr/327056" class="button">Project 5 - Augmented Reality</a>
+                </div>
+                <div class="box">
+                    <h2>"Design@UBALT" AR Experience</h2>
+                    <p>This assignent, similar to Project 5, involved creating an AR environemnt.
+                        <br> This environemnt would provide information on the design programs offered at the
+                        <br> University of Baltimore. Scan the QR Code below to get the experience.
+                    </p>
+                    <img src="img/arvr.jpg" alt="VR Headset"><br>
+                    <p>Project 6 - "Design @ UBALT"</p>
+                    <img src="img/daub.png" alt="QR Code">
+                </div>
+            </div>
+        </body>
+
+</html>
+
+<section>
+    <h3>Reflections</h3>
+    <p class="cream-text">Accessibility principles are paramount for UX/UI designers.
+        <br>Integrating features like screen readers, alt text, and keyboard navigation
+        <br>ensures that digital products are inclusive, catering to users with diverse abilities.
+        <br>With the continued development of refreshing and new technologies, a new era of creativity, accessibility,
+        and adaptability will be ushered in.
+    </p>
+</section>
+<section>
+    <div class="image">
+        <picture>
+            <img src="img/KJBW.png" alt="Kourtney Black & White Photo" media="(max-width: 600px)">
+        </picture>
+    </div>
+    </p>
+</section>
+</main>
+<footer>
+    <p class="cream-text">2023 Kourtney Johnson - Email : Kourtney.Johnson@Ubalt.edu</p>
+    <picture>
+        <img src="img/kjltiny.png" alt="Kourtney J Logo" media="(max-width: 100px)">
+    </picture>
+</footer>
+</body>
+
+</html>
